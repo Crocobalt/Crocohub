@@ -20,6 +20,16 @@ Project just started: organization not decided yet. Update this file as decision
 - **Back**: TypeScript, probably NestJS.
 - **Hosting**: a single VPS serving everything at first.
 
+## Jira
+
+- Site: `coturgis.atlassian.net`, project **Crocohub**, key `CH` (tickets: `CH-<number>`).
+- Accessed through the Atlassian MCP server (`.mcp.json`).
+- Hierarchy: **Epic** → **Story** / **Tâche** → **Subtask**.
+- Statuses: À faire → En cours → Terminé.
+- Commits follow the global format with the `CH` key: `CH-404 feat: add login page`.
+- Feature branches from `develop`, named after the ticket: `CH-12-short-description`.
+- Global Jira rules apply: read/list freely, create/modify only after my validation.
+
 ## Notes
 
 - Global rules (workflow, code style, git) live in `~/.claude/CLAUDE.md`.
