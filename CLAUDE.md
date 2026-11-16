@@ -40,4 +40,5 @@ Project just started: organization not decided yet. Update this file as decision
 ## Notes
 
 - Global rules (workflow, code style, git) live in `~/.claude/CLAUDE.md`.
+- Human-readable project documentation lives in [`docs/`](docs/) (e.g. [`docs/jira.docs.md`](docs/jira.docs.md)).
 - This is a showcase site for job hunting: design and polish matter, be proactive with visual suggestions.
