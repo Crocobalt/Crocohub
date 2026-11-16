@@ -25,7 +25,14 @@ Project just started: organization not decided yet. Update this file as decision
 - Site: `coturgis.atlassian.net`, project **Crocohub**, key `CH` (tickets: `CH-<number>`).
 - Accessed through the Atlassian MCP server (`.mcp.json`).
 - Hierarchy: **Epic** → **Story** / **Tâche** → **Subtask**.
-- Statuses: À faire → En cours → Terminé.
+- Statuses (workflow order):
+  1. **À faire**: planned for the current sprint.
+  2. **En cours**: picked up and in progress (max 1 per person).
+  3. **En cours de revue**: done, waiting for code review.
+  4. **A push sur dev**: reviewed, ready to merge into `develop`.
+  5. **tests-dev**: being verified on the test server and/or with the client.
+  6. **A push sur main**: everything works, ready to merge into `main`.
+- Claude may move tickets (with my validation) up to **A push sur dev** at most. Beyond that state, I handle it.
 - Commits follow the global format with the `CH` key: `CH-404 feat: add login page`.
 - Feature branches from `develop`, named after the ticket: `CH-12-short-description`.
 - Global Jira rules apply: read/list freely, create/modify only after my validation.
