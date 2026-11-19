@@ -30,8 +30,9 @@ Project just started: organization not decided yet. Update this file as decision
   2. **En cours**: picked up and in progress (max 1 per person).
   3. **En cours de revue**: done, waiting for code review.
   4. **A push sur dev**: reviewed, ready to merge into `develop`.
-  5. **tests-dev**: being verified on the test server and/or with the client.
+  5. **tests dev**: being verified on the test server and/or with the client.
   6. **A push sur main**: everything works, ready to merge into `main`.
+  7. **Terminé**: merged into `main`, ticket closed.
 - Claude may move tickets (with my validation) up to **A push sur dev** at most. Beyond that state, I handle it.
 - Commits follow the global format with the `CH` key: `CH-404 feat: add login page`.
 - Branches are named after the ticket: `CH-12-short-description`.

@@ -24,8 +24,9 @@ Tickets move through these statuses, in order:
 2. **En cours**: picked up and in progress. One ticket per person at a time.
 3. **En cours de revue**: work done, waiting for code review.
 4. **A push sur dev**: reviewed, ready to be merged into `develop`.
-5. **tests-dev**: being verified on the test server and/or with the client.
+5. **tests dev**: being verified on the test server and/or with the client.
 6. **A push sur main**: everything works, ready to be merged into `main`.
+7. **Terminé**: merged into `main`, ticket closed.
 
 ## Git conventions
 
