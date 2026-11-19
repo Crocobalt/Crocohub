@@ -21,6 +21,6 @@ describe('Header', () => {
 
   it('should display the site owner name', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('header')?.textContent).toContain('Crocobalt');
+    expect(compiled.querySelector('header')?.textContent).toContain('Corentin Turgis');
   });
 });

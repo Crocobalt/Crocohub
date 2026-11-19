@@ -1,3 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+/* Design tokens: dark warm palette with a red poster-style headline. */
+@theme {
+  --color-night: #170d0c; /* page background */
+  --color-coal: #2a1816; /* borders, dividers */
+  --color-signal: #e0322b; /* main red, large headline only (contrast too low for body text) */
+  --color-ember: #f2645b; /* light red for links and small accents, readable on night */
+  --color-ash: #e9deda; /* main text */
+  --color-smoke: #9c8783; /* secondary text */
+
+  --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --font-body: 'Atkinson Hyperlegible Next', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-night font-body text-ash antialiased;
+  }
+
+  /* Visible keyboard focus on every interactive element. */
+  :focus-visible {
+    @apply rounded-sm outline-2 outline-offset-4 outline-ember;
+  }
+}
