@@ -13,9 +13,9 @@ export const routes: Routes = [
     loadComponent: () => import('./features/cv/cv.page').then((module) => module.CvPage),
   },
   {
-    path: 'apps',
-    title: 'CrocHub — Apps',
-    loadComponent: () => import('./features/apps/apps.page').then((module) => module.AppsPage),
+    path: 'lab',
+    title: 'CrocHub — Lab',
+    loadComponent: () => import('./features/lab/lab.page').then((module) => module.LabPage),
   },
   { path: '**', redirectTo: '' },
 ];

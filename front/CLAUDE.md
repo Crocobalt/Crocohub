@@ -20,5 +20,5 @@ Angular front-end of CrocHub. Fill this file progressively as the app grows.
 - `core/`: app-wide singletons (services, layout, guards).
 - `shared/`: reusable UI components, pipes, utils.
 - `features/<name>/`: one folder per page, lazy-loaded from `app.routes.ts`.
-  - `home/` (`/`), `cv/` (`/cv`), `apps/` (`/apps`).
+  - `home/` (`/`), `cv/` (`/cv`), `lab/` (`/lab`).
 - Pages are generated with `ng g c features/<name> --type=page`.

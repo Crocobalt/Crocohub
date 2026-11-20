@@ -1,0 +1,43 @@
+<div class="flex min-h-screen flex-col">
+  <app-header />
+
+  <main class="mx-auto w-full max-w-3xl flex-1 px-4 py-16 sm:py-24">
+    <h1 class="font-display text-5xl leading-[0.9] font-semibold text-signal uppercase sm:text-7xl">
+      Lab
+    </h1>
+    <p class="mt-6 max-w-[65ch] text-lg leading-relaxed">
+      The projects I build on my own time. Some are finished, some are still taking shape.
+    </p>
+
+    <article class="mt-12 rounded-sm border-2 border-coal p-6 sm:p-8">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <h2 class="font-display text-3xl font-semibold text-ash uppercase">Quest Board</h2>
+        <span class="rounded-sm bg-coal px-3 py-1 text-sm text-ember">In development</span>
+      </div>
+
+      <p class="mt-4 max-w-[65ch] leading-relaxed">
+        An idle game where you run a quest board: post quests with rewards paid now or later, and
+        adventurers pick the ones worth it, spend their gold on gear and grow stronger.
+      </p>
+
+      <!-- Sample quest notice: shows the core mechanic at a glance -->
+      <figure class="mt-6 border-l-2 border-ember pl-4">
+        <figcaption class="text-sm text-smoke">Sample quest</figcaption>
+        <p class="mt-1 font-bold">Kill 10 slimes</p>
+        <p class="text-smoke">20 gold now, 40 more on return</p>
+      </figure>
+
+      <!-- Disabled until the game is playable -->
+      <button
+        type="button"
+        disabled
+        title="Not playable yet"
+        class="mt-8 cursor-not-allowed rounded-sm border-2 border-coal px-5 py-2 font-bold text-smoke"
+      >
+        Play
+      </button>
+    </article>
+  </main>
+
+  <app-footer />
+</div>

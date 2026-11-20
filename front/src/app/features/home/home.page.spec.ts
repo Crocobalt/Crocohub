@@ -25,4 +25,9 @@ describe('HomePage', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('a[href="/cv"]')).not.toBeNull();
   });
+
+  it('should link to the lab page', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('a[href="/lab"]')).not.toBeNull();
+  });
 });
