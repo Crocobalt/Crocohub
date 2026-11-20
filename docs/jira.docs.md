@@ -30,9 +30,9 @@ Tickets move through these statuses, in order:
 
 ## Git conventions
 
-- One branch per ticket, named after the ticket: `CH-12-short-description`.
-  - Epic branches are created from `develop`.
-  - Ticket branches are created from their epic's branch (e.g. `CH-7-angular-setup` from `CH-6-home-page-mvp`).
+- One branch per ticket, named `<prefix>/CH-<number>-short-description`:
+  - Epics: `epic/` prefix, created from `develop` (e.g. `epic/CH-6-home-page-mvp`).
+  - Features: `feat/` prefix, created from their epic's branch (e.g. `feat/CH-9-cv`).
 - Commit format: `CH-<number> <type>: <message>`, always in English.
   - Allowed types: `feat`, `fix`, `chore`, `docs`, `refactor`.
   - Examples: `CH-404 feat: add login page`, `CH-404 fix: update email regex`.

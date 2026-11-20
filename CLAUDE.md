@@ -35,9 +35,9 @@ Project just started: organization not decided yet. Update this file as decision
   7. **Terminé**: merged into `main`, ticket closed.
 - Claude may move tickets (with my validation) up to **A push sur dev** at most. Beyond that state, I handle it.
 - Commits follow the global format with the `CH` key: `CH-404 feat: add login page`.
-- Branches are named after the ticket: `CH-12-short-description`.
-  - Epic branches are created from `develop`.
-  - Ticket branches are created from their epic's branch (e.g. `CH-7-angular-setup` from `CH-6-home-page-mvp`).
+- Branches are named `<prefix>/CH-<number>-short-description`:
+  - Epics: `epic/` prefix, created from `develop` (e.g. `epic/CH-6-home-page-mvp`).
+  - Features: `feat/` prefix, created from their epic's branch (e.g. `feat/CH-9-cv`).
 - Global Jira rules apply: read/list freely, create/modify only after my validation.
 
 ## Notes
