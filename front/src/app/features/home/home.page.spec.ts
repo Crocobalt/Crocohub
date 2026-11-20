@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { HomePage } from './home.page';
 
 describe('HomePage', () => {
@@ -8,6 +9,7 @@ describe('HomePage', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HomePage],
+      providers: [provideRouter([])],
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomePage);
@@ -17,5 +19,10 @@ describe('HomePage', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should link to the CV page', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('a[href="/cv"]')).not.toBeNull();
   });
 });
